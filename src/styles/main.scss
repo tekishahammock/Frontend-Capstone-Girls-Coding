@@ -127,6 +127,7 @@ html {
 
   .username {
     color: $font-color-secondary;
+
   }
 
   ul {
@@ -137,6 +138,11 @@ html {
   .links {
     display: inline-block;
     float: right;
+    margin: 3px 0;
+  }
+
+  .current-page {
+    background-color: $main-color;
   }
 
   li {
@@ -149,6 +155,7 @@ html {
     letter-spacing: .01rem;
     list-style-type: none;
     text-decoration: none;
+    padding: 6px;
 
     &:visited {
       color: $font-color-secondary;

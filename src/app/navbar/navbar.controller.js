@@ -6,13 +6,13 @@ angular.module("app")
     $rootScope.$watch("route", () => {
       console.log($rootScope.route);
       for (let i = 0; i < navList.length; i++) {
-        if (navList.item(i).classList.contains("currentPage")) {
-          navList.item(i).classList.remove("currentPage");
+        if (navList.item(i).classList.contains("current-page")) {
+          navList.item(i).classList.remove("current-page");
         }
       }
       for (let i = 0; i < navList.length; i++) {
         if (navList.item(i).id === $rootScope.route) {
-          navList.item(i).classList.add("currentPage");
+          navList.item(i).classList.add("current-page");
         }
       }
     });
