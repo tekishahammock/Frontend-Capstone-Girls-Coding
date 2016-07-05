@@ -1,5 +1,5 @@
 angular.module("app")
-  .controller("NavCtrl", function($scope, $rootScope) {
+  .controller("NavCtrl", function($scope, $rootScope, AuthFactory) {
     const navList = document.getElementsByClassName("nav-link");
 
     // Assigns "selected" class to navbar options when on matching page

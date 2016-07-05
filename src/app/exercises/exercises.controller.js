@@ -1,5 +1,5 @@
 angular.module("app")
-  .controller("ExercisesCtrl", function($scope, $rootScope, $timeout, $routeParams, ExercisesFactory, UserFactory, AuthFactory, NavFactory, $location){
+  .controller("ExercisesCtrl", function($scope, $rootScope, $timeout, $routeParams, ExercisesFactory, UserFactory, AuthFactory, $location){
     ExercisesFactory.getExercises().then(data => {
       const currentQuestion = parseInt(($routeParams.question).replace("q", "")) - 1;
       $scope.exercisesAll = data;

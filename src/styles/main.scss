@@ -11,6 +11,7 @@ html {
   background-color: $main-color;
 }
 
+// MAIN PAGE STYLES - CONTAINER STYLES
 .container {
   background-color: $background-color;
   border: 5px solid $border-color;
@@ -20,6 +21,7 @@ html {
   width: 940px;
 }
 
+// LANDING PAGE STYLES - LOGIN PAGE STYLES
 .login-page {
   color: $font-color-main;
   font-family: $font-stack;
@@ -110,6 +112,46 @@ html {
         font-size: 2.75rem;
         transition: font-size .1s ease-in-out .0001s;
       }
+    }
+  }
+}
+
+// NAVBAR STYLES
+.navbar {
+  background-color: $font-color-main;
+  border-radius: 10px;
+  font-family: $font-stack;
+  font-size: 1.5rem;
+  height: 40px;
+  margin: 10px;
+
+  .username {
+    color: $font-color-secondary;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .links {
+    display: inline-block;
+    float: right;
+  }
+
+  li {
+    display: inline-block;
+    margin: 5px 15px;
+  }
+
+  a {
+    color: $font-color-secondary;
+    letter-spacing: .01rem;
+    list-style-type: none;
+    text-decoration: none;
+
+    &:visited {
+      color: $font-color-secondary;
     }
   }
 }

@@ -1,5 +1,5 @@
 angular.module("app")
-  .controller("ExerciseListCtrl", function($scope, $rootScope, NavFactory, $location, UserFactory, AuthFactory, $timeout) {
+  .controller("ExerciseListCtrl", function($scope, $rootScope, $location, UserFactory, AuthFactory, $timeout) {
     $rootScope.route = $location.$$path;
 
     $scope.backToExercise = () => {
