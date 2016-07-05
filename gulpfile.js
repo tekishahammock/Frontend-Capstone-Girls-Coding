@@ -14,7 +14,7 @@ const sourcemaps = require("gulp-sourcemaps");
 
 const distributionPath = "./dist";
 const sassRelativePath = "/styles";
-const sourcePath = "./src";
+const sourcePath = "/src";
 
 const allDistributionPath = `${distributionPath}/**/*`;
 const allSassPath = `${sourcePath}${sassRelativePath}/**/*.scss`;
