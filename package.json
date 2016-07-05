@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "gulp build",
+    "serve": "gulp watch",
+    "start": "npm run build && http-server dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
