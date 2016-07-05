@@ -1,0 +1,21 @@
+{
+  "name": "frontend-capstone-girls-coding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^2.2.1",
+    "gulp": "^3.9.1",
+    "gulp-connect": "^4.1.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "http-server": "^0.9.0",
+    "node-sass": "^3.8.0",
+    "run-sequence": "^1.2.2"
+  }
+}
