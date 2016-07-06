@@ -251,13 +251,18 @@ html {
           padding: 10px;
           width: 430px;
 
+          .selected {
+            background-color: $font-color-main !important;
+          }
+
           &:hover {
             background-color: $background-color;
           }
 
-          .selected {
-            background-color: $font-color-main !important;
+          &:focus {
+            border: 5px solid $font-color-main;
           }
+
         }
       }
 
@@ -267,10 +272,13 @@ html {
         a {
           background-color: $font-color-main;
           border-radius: 7px;
+          bottom: 20px;
           color: $font-color-secondary;
           display: inline;
           float: right;
           padding: 10px;
+          position: absolute;
+          right: 20px;
           text-align: center;
           text-decoration: none;
           width: 62px;
