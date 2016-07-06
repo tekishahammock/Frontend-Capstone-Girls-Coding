@@ -2,10 +2,11 @@ $font-stack: 'Ubuntu Mono', monospace;
 $font-title: 'Pacifico', cursive;
 $main-color: #8f6190;
 $border-color: #fff;
-$background-color: rgba(255, 255, 255, .5);
+$background-color: #c7b0c7;
 $font-color-main: #573358;
 $font-color-secondary: #fff;
 $emphasis: #fff;
+$inputs: #e8dfe8;
 
 html {
   background-color: $main-color;
@@ -119,11 +120,10 @@ html {
 // NAVBAR STYLES
 .navbar {
   background-color: $font-color-main;
-  border-radius: 10px;
+  border-radius: 15px 15px 0 0;
   font-family: $font-stack;
   font-size: 1.5rem;
-  height: 40px;
-  margin: 10px;
+  height: 45px;
 
   .username {
     color: $font-color-secondary;
@@ -138,12 +138,9 @@ html {
   .links {
     display: inline-block;
     float: right;
-    margin: 3px 0;
+    margin-top: 10px;
   }
 
-  .current-page {
-    background-color: $main-color;
-  }
 
   li {
     display: inline-block;
@@ -154,11 +151,140 @@ html {
     color: $font-color-secondary;
     letter-spacing: .01rem;
     list-style-type: none;
+    padding: 6px 12px;
     text-decoration: none;
-    padding: 6px;
 
     &:visited {
       color: $font-color-secondary;
     }
   }
+
+  .current-page {
+    background-color: $background-color;
+    border-radius: 5px 5px 0 0;
+    color: $font-color-main !important;
+    font-weight: 700;
+  }
 }
+
+// EXERCISE STYLES
+.exercises-page {
+  background-color: $background-color;
+  border-radius: 0 0 15px 15px;
+  font-family: $font-stack;
+  font-size: 1.25rem;
+  height: 540px;
+  position: relative;
+
+  .speech-bubble-show {
+    position: absolute;
+
+    .speech-bubble-tail-1 {
+      border-bottom: 30px solid transparent;
+      border-right: 50px solid $emphasis;
+      height: 0;
+      left: 227px;
+      position: absolute;
+      top: 160px;
+      width: 0;
+    }
+
+    .answer-bubble {
+      background-color: $emphasis;
+      border-radius: 15px;
+      color: $font-color-main;
+      font-family: $font-stack;
+      font-size: 1.15rem;
+      font-weight: 700;
+      left: 275px;
+      padding: 15px;
+      position: absolute;
+      top: 150px;
+      width: 212px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .speech-bubble-exercise {
+
+    .speech-bubble-tail-2 {
+      border-bottom: 60px solid $emphasis;
+      border-right: 60px solid transparent;
+      height: 0;
+      left: 180px;
+      position: relative;
+      top: 225px;
+      width: 0;
+    }
+
+    .exercises-container {
+      background-color: $emphasis;
+      border-radius: 15px;
+      bottom: -210px;
+      height: 225px;
+      margin: 15px 15px 0;
+      padding: 15px;
+      position: relative;
+
+      p {
+        color: $font-color-main;
+        margin: 0 0 20px;
+      }
+
+      .answer-cluster {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100px;
+
+        justify-content: space-around;
+
+        button {
+          background-color: $main-color;
+          border: 0;
+          border-radius: 5px;
+          color: $font-color-secondary;
+          font-size: 1.15rem;
+          padding: 10px;
+          width: 430px;
+
+          &:hover {
+            background-color: $background-color;
+          }
+
+          .selected {
+            background-color: $font-color-main !important;
+          }
+        }
+      }
+
+      .next-buttons {
+        display: block;
+
+        a {
+          background-color: $font-color-main;
+          border-radius: 7px;
+          color: $font-color-secondary;
+          display: inline;
+          float: right;
+          padding: 10px;
+          text-align: center;
+          text-decoration: none;
+          width: 62px;
+        }
+      }
+
+      input {
+        background-color: $inputs;
+        border-radius: 7px;
+        color: $font-color-main;
+        font-family: cursive;
+        font-size: 1.13rem;
+      }
+    }
+  }
+}
+

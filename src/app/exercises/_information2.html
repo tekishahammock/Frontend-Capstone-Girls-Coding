@@ -1,9 +1,19 @@
 <div ng-show="firstSection">
   <p>{{exercise.paragraph1}}</p>
-  <a href="" ng-click="next()">Next</a>
+
+  <div class="exercise-bottom">
+    <div class="next-buttons">
+      <a href="" ng-click="next()">Next</a>
+    </div>
+  </div>
 </div>
 
 <div ng-show="secondSection">
   <p>{{exercise.paragraph2}}</p>
-  <a href="#/exercises/q{{exercise.next}}" ng-show="secondSection">Next</a>
+
+  <div class="exercise-bottom">
+    <div class="next-buttons">
+      <a href="#/exercises/q{{exercise.next}}" ng-show="secondSection">Next</a>
+    </div>
+  </div>
 </div>
