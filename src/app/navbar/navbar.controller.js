@@ -16,4 +16,7 @@ angular.module("app")
         }
       }
     });
+
+    $scope.logoutNow = () => AuthFactory.logout().then(console.log("successful logout")).catch(alert);
+
   });

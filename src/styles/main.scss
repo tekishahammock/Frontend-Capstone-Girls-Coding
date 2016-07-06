@@ -288,3 +288,58 @@ html {
   }
 }
 
+// EXERCISE-LIST STYLES
+.exercise-list-page {
+  color: $font-color-main;
+  font-family: $font-stack;
+
+  .exercise-list-page-top {
+    display: block;
+
+    .exercise-list-title {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .back-button {
+      background-color: $font-color-main;
+      border-radius: 10px;
+      display: inline-block;
+      float: right;
+      font-size: 2rem;
+      margin: 10px 25px;
+      padding: 10px;
+
+      &:hover {
+        background-color: $main-color;
+      }
+
+      a {
+        color: $font-color-secondary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .exercise-link-group {
+    display: block;
+    height: 470px;
+    margin-left: 20px;
+    overflow: scroll;
+
+    a {
+      color: $font-color-secondary;
+      font-size: 2rem;
+      text-decoration: none;
+
+      &:visited {
+        color: $font-color-secondary;
+      }
+
+      &:hover {
+        color: $font-color-main;
+      }
+    }
+  }
+}
+
