@@ -12,7 +12,7 @@ const runSequence = require("run-sequence");
 const sass = require("gulp-sass");
 const sourcemaps = require("gulp-sourcemaps");
 
-const distributionPath = "./dist";
+const distributionPath = "./docs";
 const sassRelativePath = "/styles";
 const sourcePath = "./src";
 
