@@ -1,5 +1,10 @@
 # Front-end Capstone: Getting Girls to Code
 
+### Deployed Site
+[Girls Coding on the Web](http://tekishahammock.com/Frontend-Capstone-Girls-Coding/)
+
+![screencap of Girls Coding Login page](https://github.com/tekishahammock/Frontend-Capstone-Girls-Coding/raw/master/src/styles/girls-coding-login.jpg)
+
 ### Game Background
 This product, made as a significant project during my time as a Nashville Software School student, is a game made to get middleschool-aged girls interesting in web development. Development features of this game include use of Angular and Sass to achieve an easily understood, architecturally sound code base on which the game can be modified or expanded.
 
@@ -7,7 +12,5 @@ The final product is particularly close to my heart, in that it allows me to do 
 
 This game is the beginning of an effort to make technology more accessible and desirable to young girls. Just as we expose our daughters to dance classes and art and our sons to Legos and Space Camp, we must be willing to provide all of our children with every opportunity to discover what it is that sparks their interest and lights them up.
 
-### Game Code and Use Details
-*Getting Girls to Code* was made using the Angular framework, Sass for CSS compilation, and Firebase as the game's back-end component. It specifically takes advantage of ES6 syntax and uses CSS transitions and animations in lieu of more traditional Javascript animations. The code here is provided for personal, non-commercial use. Please request written permission to publish, sub-license or sell any or all parts of this program.
-
-### Credits
+### Game Code Details
+*Getting Girls to Code* was made using the Angular framework, Sass for CSS compilation, and Firebase as the game's back-end component. It specifically takes advantage of ES6 syntax and uses CSS transitions and animations in lieu of more traditional Javascript animations.
