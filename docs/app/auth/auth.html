@@ -1,0 +1,28 @@
+<div class="login-page">
+  <div class="game-title">
+    <h1>Girls Coding</h1>
+  </div>
+  <div class="landing-div" ng-hide=" login || register">
+    <div>
+      <a ng-href="#/login" title="">Login!</a>
+    </div>
+    <div>
+      <a ng-href="#/register" title="">Register!</a>
+    </div>
+  </div>
+
+  <div class="login-reg" ng-show="login || register">
+    <div>
+      <label for="user-email">Email:</label>
+      <input id="user-email" ng-model="user.email" type="text"></input>
+    </div>
+    <div>
+      <label for="user-password">Password:</label>
+      <input id="user-password" ng-model="user.password" type="password"></input>
+    </div>
+    <div class="login-reg-button">
+      <button ng-show="login" ng-click="loginUser()">Login</button>
+      <button ng-show="register" ng-click="registerUser()">Register</button>
+    </div>
+  </div>
+</div>
