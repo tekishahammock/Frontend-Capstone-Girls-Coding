@@ -1,0 +1,14 @@
+<div ng-show="firstSection">
+  <p>{{exercise.question1}}</p>
+
+  <div class="exercise-bottom">
+    <input type="text" ng-model="$parent.userInput1"></input>
+    <input type="text" ng-model="$parent.userInput2"></input>
+
+    <div class="next-buttons">
+      <a href="" ng-hide="correct" ng-click="evaluateUserCode()">Submit</a>
+      <a href="#/exercises/q{{exercise.next}}" ng-show="correct">Next</a>
+    </div>
+  </div>
+</div>
+

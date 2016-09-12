@@ -1,0 +1,49 @@
+<div ng-show="firstSection">
+  <p>{{exercise.paragraph1}}</p>
+
+  <div class="exercise-bottom">
+    <div class="next-buttons">
+      <a href="" ng-click="next()">Next</a>
+    </div>
+  </div>
+</div>
+
+<div ng-show="secondSection">
+  <p>{{exercise.paragraph2}}</p>
+
+  <div class="exercise-bottom">
+    <div class="next-buttons">
+      <a href="" ng-click="next()">Next</a>
+    </div>
+  </div>
+</div>
+
+<div ng-show="lastSection">
+  <p>{{exercise.paragraph3}}</p>
+
+  <div class="exercise-bottom">
+    <div class="next-buttons">
+      <a href="" ng-click="next()">Next</a>
+    </div>
+  </div>
+</div>
+
+<div ng-show="questionShow">
+  <p>{{exercise.question1}}</p>
+
+  <div class="exercise-bottom">
+    <div class="answer-cluster">
+      <div ng-repeat="(key, value) in exercise.answer">
+        <button class="answers" value="{{value}}" ng-click="userSelectedAnswer()">{{key}}</button>
+      </div>
+    </div>
+
+    <div class="next-buttons">
+      <a href="" class="submit-answer" ng-hide="correct" ng-click="evaluateMultipleChoice()">Submit</a>
+      <a href="#/exercises/q{{exercise.next}}" ng-show="correct">Next</a>
+    </div>
+  </div>
+</div>
+
+
+

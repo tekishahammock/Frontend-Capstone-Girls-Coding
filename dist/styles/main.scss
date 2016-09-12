@@ -1,0 +1,390 @@
+$font-stack: 'Ubuntu Mono', monospace;
+$font-title: 'Pacifico', cursive;
+$main-color: #8f6190;
+$border-color: #fff;
+$background-color: #c7b0c7;
+$font-color-main: #573358;
+$font-color-secondary: #fff;
+$emphasis: #fff;
+$inputs: #e8dfe8;
+
+html {
+  background-color: $main-color;
+}
+
+// MAIN PAGE STYLES - CONTAINER STYLES
+.container {
+  background-color: $background-color;
+  border: 5px solid $border-color;
+  border-radius: 20px;
+  height: 600px;
+  margin: auto;
+  width: 940px;
+}
+
+// LANDING PAGE STYLES - LOGIN PAGE STYLES
+.login-page {
+  color: $font-color-main;
+  font-family: $font-stack;
+}
+
+.game-title {
+  h1 {
+    color: $font-color-main;
+    font-family: $font-title;
+    font-size: 6rem;
+    margin-bottom: 25px;
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: -4px 0 $emphasis, 0 4px $emphasis, 4px 0 $emphasis, 0 -4px $emphasis;
+  }
+}
+
+.landing-div {
+  div {
+    margin: 10px;
+    text-align: center;
+  }
+
+  a {
+    color: $font-color-main;
+    font-size: 4rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:visited {
+      color: $font-color-main;
+    }
+
+    &:hover {
+      color: $emphasis;
+    }
+  }
+}
+
+.login-reg {
+  background-color: $main-color;
+  border: 4px solid $border-color;
+  border-radius: 20px;
+  height: 300px;
+  margin: 0 auto;
+  width: 400px;
+
+  // If we ever get ngAnimate working, change above height to 10px and load down
+  // .ng-hide-remove {
+  //   height: 300px;
+  //   transition: height .5s ease-in .0001s,
+  //   width .5s ease-in .0001s;
+  //   width: 400px;
+  // }
+
+  div {
+    margin: 20px auto;
+    width: 350px;
+  }
+
+  label {
+    color: $font-color-secondary;
+    font-size: 2.5rem;
+  }
+
+  input {
+    color: $font-color-main;
+    font-family: cursive;
+    font-size: 1.5rem;
+    width: 100%;
+  }
+
+  .login-reg-button {
+    margin: 0 auto;
+
+    button {
+      background-color: $font-color-main;
+      border: 0;
+      border-radius: 5px;
+      color: $font-color-secondary;
+      display: block;
+      font-family: $font-stack;
+      font-size: 2.25rem;
+      margin: auto;
+      padding: 5px;
+
+      &:hover {
+        font-size: 2.75rem;
+        transition: font-size .1s ease-in-out .0001s;
+      }
+    }
+  }
+}
+
+// USER SETUP STYLES
+.user-setup {
+  color: $font-color-main;
+  font-family: $font-stack;
+
+  div {
+    margin: 10px;
+    text-align: center;
+  }
+
+  h2 {
+    color: $font-color-main;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+
+  input {
+    color: $font-color-main;
+    font-family: cursive;
+    font-size: 1.5rem;
+    width: 50%;
+  }
+}
+
+.user-setup-button {
+  background-color: $font-color-main;
+  border: 0;
+  border-radius: 5px;
+  color: $font-color-secondary;
+  display: block;
+  font-family: $font-stack;
+  font-size: 2.25rem;
+  margin: auto;
+  padding: 5px;
+
+  &:hover {
+    font-size: 2.75rem;
+    transition: font-size .1s ease-in-out .0001s;
+  }
+}
+
+// NAVBAR STYLES
+.navbar {
+  background-color: $font-color-main;
+  border-radius: 15px 15px 0 0;
+  font-family: $font-stack;
+  font-size: 1.5rem;
+  height: 45px;
+
+  .username {
+    color: $font-color-secondary;
+
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  .links {
+    display: inline-block;
+    float: right;
+    margin-top: 10px;
+  }
+
+
+  li {
+    display: inline-block;
+    margin: 5px 15px;
+  }
+
+  a {
+    color: $font-color-secondary;
+    letter-spacing: .01rem;
+    list-style-type: none;
+    padding: 6px 12px;
+    text-decoration: none;
+
+    &:visited {
+      color: $font-color-secondary;
+    }
+  }
+
+  .current-page {
+    background-color: $background-color;
+    border-radius: 5px 5px 0 0;
+    color: $font-color-main !important;
+    font-weight: 700;
+  }
+}
+
+// EXERCISE STYLES
+.exercises-page {
+  background-color: $background-color;
+  border-radius: 0 0 15px 15px;
+  font-family: $font-stack;
+  font-size: 1.25rem;
+  height: 540px;
+  position: relative;
+
+  .speech-bubble-show {
+    position: absolute;
+
+    .speech-bubble-tail-1 {
+      border-bottom: 30px solid transparent;
+      border-right: 50px solid $emphasis;
+      height: 0;
+      left: 227px;
+      position: absolute;
+      top: 160px;
+      width: 0;
+    }
+
+    .answer-bubble {
+      background-color: $emphasis;
+      border-radius: 15px;
+      color: $font-color-main;
+      font-family: $font-stack;
+      font-size: 1.15rem;
+      font-weight: 700;
+      left: 275px;
+      padding: 15px;
+      position: absolute;
+      top: 150px;
+      width: 212px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .speech-bubble-exercise {
+
+    .speech-bubble-tail-2 {
+      border-bottom: 60px solid $emphasis;
+      border-right: 60px solid transparent;
+      height: 0;
+      left: 180px;
+      position: relative;
+      top: 225px;
+      width: 0;
+    }
+
+    .exercises-container {
+      background-color: $emphasis;
+      border-radius: 15px;
+      bottom: -210px;
+      height: 225px;
+      margin: 15px 15px 0;
+      padding: 15px;
+      position: relative;
+
+      p {
+        color: $font-color-main;
+        margin: 0 0 20px;
+      }
+
+      .answer-cluster {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100px;
+
+        justify-content: space-around;
+
+        button {
+          background-color: $main-color;
+          border: 0;
+          border-radius: 5px;
+          color: $font-color-secondary;
+          font-size: 1.15rem;
+          padding: 10px;
+          width: 430px;
+
+          &:hover {
+            background-color: $background-color;
+          }
+
+          &:focus {
+            background-color: $font-color-main;
+          }
+
+        }
+      }
+
+      .next-buttons {
+        display: block;
+
+        a {
+          background-color: $font-color-main;
+          border-radius: 7px;
+          bottom: 20px;
+          color: $font-color-secondary;
+          display: inline;
+          float: right;
+          padding: 10px;
+          position: absolute;
+          right: 20px;
+          text-align: center;
+          text-decoration: none;
+          width: 62px;
+        }
+      }
+
+      input {
+        background-color: $inputs;
+        border-radius: 7px;
+        color: $font-color-main;
+        font-family: cursive;
+        font-size: 1.13rem;
+      }
+    }
+  }
+}
+
+// EXERCISE-LIST STYLES
+.exercise-list-page {
+  color: $font-color-main;
+  font-family: $font-stack;
+
+  .exercise-list-page-top {
+    display: block;
+
+    .exercise-list-title {
+      display: inline-block;
+      margin-left: 20px;
+    }
+
+    .back-button {
+      background-color: $font-color-main;
+      border-radius: 10px;
+      display: inline-block;
+      float: right;
+      font-size: 2rem;
+      margin: 10px 25px;
+      padding: 10px;
+
+      &:hover {
+        background-color: $main-color;
+      }
+
+      a {
+        color: $font-color-secondary;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .exercise-link-group {
+    display: block;
+    height: 470px;
+    margin-left: 20px;
+    overflow: scroll;
+
+    a {
+      color: $font-color-secondary;
+      font-size: 2rem;
+      text-decoration: none;
+
+      &:visited {
+        color: $font-color-secondary;
+      }
+
+      &:hover {
+        color: $font-color-main;
+      }
+    }
+  }
+}
+
