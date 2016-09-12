@@ -1,29 +1,48 @@
 <div ng-include="'app/navbar/_navbar.html'"></div>
 
+<div class="exercises-page">
 
-<div>
-  <!-- Question type: multiple-choice -->
-  <div ng-show="exercise.type == 'multiple-choice'">
-    <div ng-include="'app/exercises/_multiple-choice.html'"></div>
+  <div class="speech-bubble-show" ng-show="correct">
+    <div class="speech-bubble-tail-1"></div>
+    <div class="answer-bubble">
+      <p>You got it right!</p>
+    </div>
   </div>
-  <!-- Question type: code-along -->
-  <div ng-show="exercise.type == 'code-along'">
-    <div ng-include="'app/exercises/_code-along.html'"></div>
+
+  <div class="speech-bubble-show" ng-show="incorrect">
+    <div class="speech-bubble-tail-1"></div>
+    <div class="answer-bubble" >
+      <p>That's not quite right. Let's try again!</p>
+    </div>
   </div>
-  <!-- Question type: no-wrong-answer -->
-  <div ng-show="exercise.type == 'no-wrong-answer'">
-    <div ng-include="'app/exercises/_no-wrong-answer.html'"></div>
-  </div>
-  <!-- Question type: information3 -->
-  <div ng-show="exercise.type == 'information3'">
-    <div ng-include="'app/exercises/_information3.html'"></div>
-  </div>
-  <!-- Question type: information2 -->
-  <div ng-show="exercise.type == 'information2'">
-    <div ng-include="'app/exercises/_information2.html'"></div>
-  </div>
-  <!-- Question type: review -->
-  <div ng-show="exercise.type == 'review'">
-    <div ng-include="'app/exercises/_review.html'"></div>
+
+  <div class="speech-bubble-exercise">
+    <div class="speech-bubble-tail-2"></div>
+    <div class="exercises-container">
+      <!-- Question type: multiple-choice -->
+      <div ng-show="exercise.type == 'multiple-choice'">
+        <div ng-include="'app/exercises/_multiple-choice.html'"></div>
+      </div>
+      <!-- Question type: code-along -->
+      <div ng-show="exercise.type == 'code-along'">
+        <div ng-include="'app/exercises/_code-along.html'"></div>
+      </div>
+      <!-- Question type: no-wrong-answer -->
+      <div ng-show="exercise.type == 'no-wrong-answer'">
+        <div ng-include="'app/exercises/_no-wrong-answer.html'"></div>
+      </div>
+      <!-- Question type: information3 -->
+      <div ng-show="exercise.type == 'information3'">
+        <div ng-include="'app/exercises/_information3.html'"></div>
+      </div>
+      <!-- Question type: information2 -->
+      <div ng-show="exercise.type == 'information2'">
+        <div ng-include="'app/exercises/_information2.html'"></div>
+      </div>
+      <!-- Question type: review -->
+      <div ng-show="exercise.type == 'review'">
+        <div ng-include="'app/exercises/_review.html'"></div>
+      </div>
+    </div>
   </div>
 </div>

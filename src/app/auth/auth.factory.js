@@ -15,6 +15,6 @@ angular.module("app")
 
       getUser: () => {
         return firebase.auth().currentUser.uid;
-      }
+      },
     };
   });

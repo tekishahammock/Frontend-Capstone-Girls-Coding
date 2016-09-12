@@ -10,7 +10,7 @@ angular.module("app")
         }).catch(alert);
       $scope.userInfo = (snapshot) => {
         if (snapshot === null) {
-          $location.path("/player-creation");
+          $location.path("/exercises/q1");
         } else if (snapshot.exercises === undefined) {
           $location.path("/exercises/q1");
         } else {
