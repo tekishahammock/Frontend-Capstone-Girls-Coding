@@ -7,7 +7,7 @@ angular.module("app")
     };
 
     $scope.createPlayer = () => {
-      UserFactory.initialPlayerPost(AuthFactory.getUser(), $scope.user.name, $scope.selectedAnswer.value)
+      UserFactory.initialPlayerPost(AuthFactory.getUser(), $scope.user.name)
       .then(() => {
         $location.path("/exercises/q1");
         $timeout();

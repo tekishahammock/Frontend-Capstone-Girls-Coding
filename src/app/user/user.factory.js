@@ -1,16 +1,15 @@
 angular.module("app")
   .factory("UserFactory", () => {
     return {
-      initialPlayerPost: (playerID, playerName, themeColor) => {
+      initialPlayerPost: (playerID, playerName) => {
         return firebase.database().ref("/users").update(
           {[playerID]:{
-            username: playerName,
-            fav_color: themeColor
+            username: playerName
           }
         });
       },
 
-      updatePlayer: (playerID, themeColor) => {
+      updatePlayer: (playerID) => {
         return firebase.database().ref(`/users/${playerID}`).update(
           {fav_color: themeColor}
         );
